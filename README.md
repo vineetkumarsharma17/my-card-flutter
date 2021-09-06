@@ -1,6 +1,8 @@
 # my_card
 
-A new Flutter project.
+its a simple my card app.
+![alt text](https://github.com/vineetkumarsharma17/my-card-flutter/blob/master/ss.jpg)
+
 
 ## Getting Started
 
