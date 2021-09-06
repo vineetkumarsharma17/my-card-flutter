@@ -1,6 +1,7 @@
 # my_card
 
-A new Flutter project.
+its a simple my card app.
+
 
 ## Getting Started
 
