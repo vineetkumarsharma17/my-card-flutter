@@ -8,19 +8,63 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            //mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 50,
+                radius: 70,
                 backgroundImage: AssetImage("assets/images/vk.jpg"),
               ),
               Text("Vineet Kumar Sharma",style: TextStyle(
-                fontSize: 14,
+                fontSize: 28,
                 color: Colors.white,
-              ),)
+                fontFamily: "Pacifico",
+              ),),
+              Text("Flutter Developer",style: TextStyle(
+                fontSize: 17,
+                color: Colors.teal[100],
+                fontFamily: "Anton",
+                letterSpacing: 2.3,
+              ),),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10,horizontal: 30),
+                padding: EdgeInsets.all(10),
+                color: Colors.white,
+                child: Row(
+                children: [
+                  Icon(
+                    Icons.call,
+                    color: Colors.teal,
+                  ),
+                  SizedBox(width: 20,),
+                  Text("+918874327867",
+                  style: TextStyle(
+                    color: Colors.black
+                  ),),
+                ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10,horizontal: 30),
+                padding: EdgeInsets.all(10),
+                color: Colors.white,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email_outlined,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(width: 20,),
+                    Text("vineetkumarsharma17@gmail.com",
+                      style: TextStyle(
+                          color: Colors.black
+                      ),),
+                  ],
+                ),
+              )
             ],
           ),
         ),
