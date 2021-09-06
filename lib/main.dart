@@ -29,40 +29,53 @@ class MyApp extends StatelessWidget {
                 fontFamily: "Anton",
                 letterSpacing: 2.3,
               ),),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 10,horizontal: 30),
-                padding: EdgeInsets.all(10),
-                color: Colors.white,
-                child: Row(
-                children: [
-                  Icon(
-                    Icons.call,
-                    color: Colors.teal,
-                  ),
-                  SizedBox(width: 20,),
-                  Text("+918874327867",
-                  style: TextStyle(
-                    color: Colors.black
-                  ),),
-                ],
+              SizedBox(
+                width: 150,
+                child: Divider(
+                  color: Colors.teal[100],
+
                 ),
               ),
-              Container(
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10,horizontal: 30),
-                padding: EdgeInsets.all(10),
+                //padding: EdgeInsets.all(10),
                 color: Colors.white,
-                child: Row(
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Row(
                   children: [
                     Icon(
-                      Icons.email_outlined,
+                      Icons.call,
                       color: Colors.teal,
                     ),
                     SizedBox(width: 20,),
-                    Text("vineetkumarsharma17@gmail.com",
-                      style: TextStyle(
-                          color: Colors.black
-                      ),),
+                    Text("+918874327867",
+                    style: TextStyle(
+                      color: Colors.black
+                    ),),
                   ],
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10,horizontal: 30),
+                //padding: EdgeInsets.all(10),
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.email_outlined,
+                        color: Colors.teal,
+                      ),
+                      SizedBox(width: 20,),
+                      Text("vineetkumarsharma17@gmail.com",
+                        style: TextStyle(
+                            color: Colors.black
+                        ),),
+                    ],
+                  ),
                 ),
               )
             ],
